@@ -1,0 +1,25 @@
+Remarques :
+
+1. ajouter les modificateurs private dans les attributs pour que les attributs restent visible seulement dans la classe
+
+2. Modifier ArrayList par List<String>
+
+3. Regrouper les LinkedList dans une Map<String, LinkedList<String>> pour un code plus structuré ,
+avec l'ajout de l'enum Category pour que le code reste fluide si on veut ajouter une categorie
+
+4. dans la méthode add , j'ai ajouté -1 dans les insertions des tableaux pour eviter l'exception "array index of bound"
+
+5. j'ai changé la strucutre du if else dans la méthode "roll"
+
+6. dans la méthode askQuestion : j'ai changé le if else par un switch pour un code plus lisible
+
+7. meme remarque pour la méthode currentCategory : j'ai changé le if else par un switch pour un code plus lisible
+
+8. j'ai refactoré le code utilisé plusieurs fois :
+
+currentPlayer++;
+if (currentPlayer == players.size()) currentPlayer = 0;
+
+-> j'ai crée une méthode goToNextPlayer()
+
+9. j'ai changé la vérification faite dans la méthode didPlayerWin
